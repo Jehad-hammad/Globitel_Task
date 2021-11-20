@@ -1,0 +1,65 @@
+{
+    "Auth": {
+        "home": "الرئيسية",
+        "lang": "English",
+        "login": {
+            "signIn": "تسجيل الدخول",
+            "userName": "اسم المستخدم",
+            "password": "كلمة المرور",
+            "sixCharactersAtLeast": "6 حروف على الأقل",
+            "forgotPassword": "نسيت كلمة المرور؟",
+            "rememberMe": "تذكرني",
+            "login": "دخول",
+            "noAccountYet": "ليس لديك حساب بعد؟ ",
+            "register": "أنشئ حساب",
+            "or": "أو"
+        },
+        "signUp": {
+            "createAccount": "أنشئ حساب",
+            "userName" : "اسم المستخدم",
+            "emailAddress": "البريد الالكتروني",
+            "firstName": "الاسم الأول",
+            "fullName": "الاسم الكامل",
+            "phoneNumber": "رقم الهاتف",
+            "password": "كلمة المرور",
+            "sixCharactersAtLeast": "6 حروف على الأقل",
+            "confirmPassword": "تأكيد كلمة المرور",
+            "signUp": "انشاء حساب",
+            "alreadyHaveAccount": " لديك حساب؟",
+            "or": "أو",
+            "jobTitle": "الاسم الوظيفي",
+            "companyName": "اسم الشركة",
+            "lastName": "الاسم الاخير",
+            "address": "العنوان",
+            
+            "complete": "اتمام",
+            "next": "التالي",
+            "save" : "حفظ",
+            "skip" : "تخطي"
+        },
+        "resetPassword": {
+            "resetYourPassword": "تغيير كلمة المرور",
+            "feelingLost": "ضائع؟ ",
+            "login": "دخول",
+            "register": "أنشئ حساب",
+            "or": "أو",
+            "emailAddress": "البريد الالكتروني",
+            "mobileNumber": "رقم الهاتف",
+            "updatePassword": "تحديث كلمة المرور",
+            "enterCode": "ادخل الرمز الذي تم ارساله ل :",
+            "resend": "اعادة ارسال",
+            "back": "رجوع",
+            "newPassword": "كلمة المرور الجديدة",
+            "repeatPassword": "كرر كلمة المرور"
+        }
+    },
+    "Main": {
+        "lang": "English",
+        "home": "الرئيسية",
+        "about": "من نحن",
+        "contactUs": "اتصل بنا",
+        "signUp": "انشاء حساب",
+        "login": "دخول",
+        "copyRight": "تم التطوير بواسطة businicity جميع الحقوق محفوظة"
+    }
+}

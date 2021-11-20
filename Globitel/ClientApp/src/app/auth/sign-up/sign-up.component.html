@@ -1,0 +1,63 @@
+<div class="text-center">
+  <h1>{{ 'Auth.signUp.signUp' | translate }}</h1>
+</div>
+
+<div class="container">
+  <form [formGroup]="signUpForm">
+    <mat-form-field class='col-md-12'>
+      <mat-label>{{ 'Auth.signUp.emailAddress' | translate }}</mat-label>
+      <input type="text" matInput formControlName='emailAddress' />
+    </mat-form-field>
+
+    <mat-form-field class='col-md-6'>
+      <mat-label>{{ 'Auth.signUp.userName' | translate }}</mat-label>
+      <input type="text" matInput formControlName='userName' />
+    </mat-form-field>
+
+    <mat-form-field class='col-md-6'>
+      <mat-label>{{ 'Auth.signUp.phoneNumber' | translate }}</mat-label>
+      <input type="text" matInput formControlName='phoneNumber' />
+    </mat-form-field>
+
+    <mat-form-field class='col-md-12'>
+      <mat-label>{{ 'Auth.signUp.fullName' | translate }}</mat-label>
+      <input type="text" matInput formControlName='fullName' />
+    </mat-form-field>
+
+    <mat-form-field class='col-md-12'>
+      <mat-label>{{ 'Auth.signUp.password' | translate }}</mat-label>
+      <input matInput placeholder="{{'Auth.signUp.sixCharactersAtLeast' | translate}}"
+             [type]="hidePassword ? 'password' : 'text'" type="password" formControlName='password' />
+      <mat-icon (click)="hidePassword = !hidePassword" matSuffix>
+        visibility
+      </mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class='col-md-12'>
+      <mat-label>{{ 'Auth.signUp.confirmPassword' | translate }}</mat-label>
+      <input matInput [type]="hideConfirmPassword ? 'password' : 'text'" type="password"
+             formControlName='confirmPassword' />
+      <mat-icon (click)="hideConfirmPassword = !hideConfirmPassword" matSuffix>
+        visibility
+      </mat-icon>
+    </mat-form-field>
+
+    <div class="col-md-12 text-center">
+      <button mat-flat-button class="col-md-12" color="primary" [disabled]='signUpForm.invalid'
+              (click)="onSignUpClick()">
+        {{ 'Auth.signUp.signUp' | translate }}
+      </button>
+    </div>
+
+    <br />
+
+    <div class="col-md-12 text-center">
+      {{ 'Auth.signUp.alreadyHaveAccount' | translate }} <a [routerLink]="'/auth/login'">
+        {{
+ 'Auth.login.signIn' |
+                translate
+        }}
+      </a>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+  <br />
+  <div class="row col-md-12 justify-content-center">
+    <img src="../../../assets/icons/login.png" width="130px">
+  </div>
+  <br />
+
+  <div class="text-center">
+    <h1>{{ 'Auth.login.signIn' | translate }}</h1>
+  </div>
+
+  <form [formGroup]="signInForm">
+    <mat-form-field class='col-md-12'>
+      <mat-label>{{ 'Auth.login.userName' | translate }}</mat-label>
+      <input type="text" matInput formControlName='userName' />
+    </mat-form-field>
+
+    <mat-form-field class='col-md-12'>
+      <mat-label>{{ 'Auth.login.password' | translate }}</mat-label>
+      <input matInput placeholder="{{'Auth.login.sixCharactersAtLeast' | translate}}"
+             [type]="hide ? 'password' : 'text'" type="password" formControlName='password' />
+      <mat-icon (click)="hide = !hide" matSuffix>
+        visibility
+      </mat-icon>
+    </mat-form-field>
+
+
+    <br />
+
+    <div class="col-md-12 text-center">
+      <button mat-flat-button class="col-md-12" color="primary" (click)="onLoginClick()"
+              [disabled]="signInForm.invalid">
+        {{ 'Auth.login.login' | translate }}
+      </button>
+    </div>
+  </form>
+
+  <br />
+  <div class="col-md-12 text-center">
+    {{ 'Auth.login.noAccountYet' | translate }} <a [routerLink]="'/auth/signup'">
+      {{
+ 'Auth.login.register' | translate
+      }}
+    </a>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+{
+    "Auth": {
+        "lang" : "عربي",
+        "login": {
+            "signIn": "Please Sign In",
+            "userName": "User Name",
+            "password": "Password",
+            "sixCharactersAtLeast" : "6 characters at least",
+            "rememberMe": "Remember Me",
+            "login": "Login",
+            "noAccountYet": "Do not have account yet? ",
+            "register": "Register",
+            "or": "OR"
+        },
+        "signUp": {
+            "signUp" : "Sign up",
+            "createAccount": "Create an Account",
+            "userName" : "User Name",
+            "emailAddress": "Email Address",
+            "fullName": "Full Name",
+            "phoneNumber": "Phone Number",
+            "password": "Password",
+            "sixCharactersAtLeast" : "6 characters at least",
+            "confirmPassword" : "Confirm Password",
+            "alreadyHaveAccount" : "Already have an account? ",
+            "or": "OR",
+            "jobTitle": "Job Title",
+            "companyName" : "Company Name",
+            "lastName" : "Last Name",
+            "address" : "Address",
+            "complete" : "Complete",
+            "next" : "Next",
+            "save" : "Save",
+            "skip" : "Skip"
+        }        
+    },
+    "Main": {
+    }
+}
